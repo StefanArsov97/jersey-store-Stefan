@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Football Jersey Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p{
+            text-align: justify;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+        .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-instagram {
+  background: #dd2a7b;
+  color: white;
+}
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        padding: 2rem;
+     }
+
+     .grid div {
+    display: flex;
+    flex-direction: column; /* Елементите се наредуваат вертикално */
+    align-items: center; /* Центрирање на содржината */
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Сликата ќе се вклопи без празен простор */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    max-height: 300px; /* Ограничување на висината ако е потребно */
+}
+
+.grid h3, .grid p {
+    margin: 0.5rem 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="frontendindex.html">Home</a></li>
+                <li><a href="index.php">View Products</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>Welcome to Football Jersey Store</h2>
+            <p>At Football Jersey Store, we are passionate about bringing the best and latest football jerseys to fans around the world. With years of experience in the sports merchandise industry, we pride ourselves on quality, authenticity, and customer satisfaction.</p>
+        </section>
+
+        <!-- Mission Section -->
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is simple: to provide you with quality, comfort, and style, all in one place. We are dedicated to offering authentic products with excellent design and durability, so you can feel like a true champion, whether you’re on the field, at the gym, or cheering from the sidelines.
+
+                But our commitment goes beyond just selling jerseys. We strive to be a trusted partner in your sporting journey, helping you express your passion for the game and your favorite teams. From the latest official designs to classic and limited edition collections, we aim to offer something for everyone—no matter your sport, team, or personal style.
+                
+                At our store, we believe that every athlete, fan, and supporter deserves to have access to premium sports gear that enhances their experience. Whether you're training hard or simply showing off your team pride, we make sure that you get the best of both quality and performance, with a focus on comfort and fit.
+                
+                We’re passionate about sports culture, and we understand that wearing the right jersey can elevate your performance, boost your confidence, and connect you with fellow fans. That’s why we’re continuously updating our collection with the latest releases and exclusive items, ensuring that you always stay ahead of the game.
+                
+                Follow us for the latest models, exclusive offers, and discounts. We believe every athlete deserves to feel like a winner, and our goal is to help you achieve that.</p>
+        </section>
+
+        <!-- Our Team Section -->
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <div class="grid">
+                <div>
+                    <img src="images/ceo.jpg" alt="Team Member 1">
+                    <h3>Stefan Arsov</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div>
+                    <img src="images/user2.jpg" alt="Team Member 2">
+                    <h3>Andrej Simonovski</h3>
+                    <p>Head of Marketing</p>
+                </div>
+                <div>
+                    <img src="images/user3.jpg" alt="Team Member 3">
+                    <h3>Kristina Ristovska</h3>
+                    <p>Operations Manager</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Get in touch with us!</p>
+            <form id="contact-form">
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <a href="https://www.facebook.com/profile.php?id=100092034369532" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/dresovionline_/" class="fa fa-instagram"></a>
+        <a href="https://www.pinterest.com/search/pins/?q=soccer%20jersey&rs=typed" class="fa fa-pinterest"></a>
+    </main>
+
+    <footer>
+        <p><center>&copy; 2025 Football Jersey Store. All Rights Reserved.</center></p>
+    </footer>
+</body>
+</html>
